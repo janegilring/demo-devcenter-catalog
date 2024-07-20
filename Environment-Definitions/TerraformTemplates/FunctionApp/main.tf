@@ -90,7 +90,7 @@ resource "azurerm_function_app" "main" {
   storage_account_name       = azurerm_storage_account.main.name
   storage_account_access_key = azurerm_storage_account.main.primary_access_key
   https_only                 = true
-  version                    = "~3"
+  version                    = "~4"
   tags                       = {}
 
   os_type                    = var.os_type
