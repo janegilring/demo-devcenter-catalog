@@ -9,8 +9,8 @@ parameters:
   type: "string"
   default: "ArcPassword123!!"
 - id: "flavor"
-  name: "The flavor of ArcBox to deploy"
-  description: "Amount of memory available to the Container App"
+  name: "Flavor"
+  description: "The flavor of ArcBox to deploy"
   type: "string"
   default: "ITPro"
   allowed:
