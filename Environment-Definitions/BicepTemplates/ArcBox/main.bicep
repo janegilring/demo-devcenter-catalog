@@ -60,7 +60,7 @@ param guid string = substring(newGuid(),0,4)
 param location string = resourceGroup().location
 
 @description('The custom location RPO ID. This parameter is only needed when deploying the DataOps flavor.')
-param customLocationRPOID string = ''
+param customLocationRPOID string = '51dfe1e8-70c6-4de5-a08e-e18aff23d700'
 
 var templateBaseUrl = 'https://raw.githubusercontent.com/${githubAccount}/azure_arc/${githubBranch}/azure_jumpstart_arcbox/'
 var aksArcDataClusterName = 'ArcBox-AKS-Data-${guid}'
