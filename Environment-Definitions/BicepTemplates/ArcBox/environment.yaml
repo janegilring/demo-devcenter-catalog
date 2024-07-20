@@ -1,0 +1,20 @@
+name: ArcBox
+summary: This is a deployment of Azure Arc Jumpstart ArcBox using Bicep.
+description: Deploys an instance of ArcBox.
+templatePath: main.bicep
+parameters:
+- id: "windowsAdminPassword"
+  name: "windowsAdminPassword"
+  description: "Password to sign in to the ArcBox client VM"
+  type: "string"
+  default: "ArcPassword123!!"
+- id: "flavor"
+  name: "The flavor of ArcBox to deploy"
+  description: "Amount of memory available to the Container App"
+  type: "string"
+  default: "ITPro"
+  allowed:
+    - "DataOps"
+    - "DevOps"
+    - "ITPro"
+runner: Bicep
