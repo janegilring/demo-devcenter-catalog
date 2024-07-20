@@ -11,7 +11,7 @@ param windowsAdminUsername string = 'arcdemo'
 @description('Password for Windows account. Password must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character. The value must be between 12 and 123 characters long')
 @minLength(12)
 @maxLength(123)
-param windowsAdminPassword string
+param windowsAdminPassword string = 'ArcPassword123!!'
 
 @description('Enable automatic logon into ArcBox Virtual Machine')
 param vmAutologon bool = true
