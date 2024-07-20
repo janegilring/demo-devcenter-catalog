@@ -6,7 +6,7 @@ parameters:
 - id: "windowsAdminPassword"
   name: "windowsAdminPassword"
   description: "Password to sign in to the ArcBox client VM"
-  type: "string"
+  type: "securestring"
   default: "ArcPassword123!!"
 - id: "flavor"
   name: "The flavor of ArcBox to deploy"
